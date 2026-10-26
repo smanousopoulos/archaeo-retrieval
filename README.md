@@ -23,8 +23,8 @@ Run all commands from the repository root. The training scripts expect:
 
 ```text
 data/
-  general_pairs.csv       # general / SMART positive query-document pairs
-  dataset_pairs.csv       # synthetic archaeological positive query-document pairs
+  general_pairs.csv       # general positive query-document pairs
+  dataset_pairs.csv       # archaeological positive query-document pairs
 ```
 
 Each training CSV must contain `query` and `document` columns. The additional original metadata columns may be retained.
@@ -38,7 +38,7 @@ python supervised-learn-bge-2-stage.py
 The script starts from `BAAI/bge-large-en-v1.5`, then trains in two stages:
 
 1. General pairs (`data/general_pairs.csv`)
-2. Synthetic archaeological pairs (`data/dataset_pairs.csv`)
+2. Archaeological dataset pairs (`data/dataset_pairs.csv`)
 
 The final model is saved to:
 
@@ -56,8 +56,8 @@ python supervised-learn-colbert-transplant-2-stage.py
 
 The script currently starts from `bert-base-uncased` and runs these stages in the opposite order to BGE:
 
-1. Synthetic archaeological pairs (`data/dataset_pairs.csv`)
-2. General pairs (`data/general_pairs.csv`)
+1. Archaeological dataset pairs (`data/dataset_pairs.csv`)
+2. Archaeological general pairs (`data/general_pairs.csv`)
 
 The final stage model is saved to:
 
@@ -106,3 +106,11 @@ compare_results/query_counts_by_category.csv
 - The evaluation script currently excludes BM25 documents with zero/nonpositive scores before ranking. Review this behavior before making strict cross-model comparisons.
 - Record the Python version, dependency versions, GPU/CUDA configuration, random seeds, and pretrained model revisions for an exact published reproduction.
 - The scripts were inspected, not run through full GPU training and evaluation as part of the package review.
+
+## License
+
+The source code in this repository is released under the Apache License 2.0.
+
+Datasets and model checkpoints may be subject to separate licenses, as specified in their respective directories or model cards. Third-party archaeological texts and pretrained model components remain subject to their original licenses and applicable rights.
+
+See the [LICENSE](LICENSE) file for details.
