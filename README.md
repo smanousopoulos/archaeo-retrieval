@@ -1,6 +1,18 @@
 # Archaeological retrieval models
 
-This repository contains scripts to fine-tune a **BGE dense retriever**, train a **BERT backbone for a ColBERT adaptation experiment**, and compare the resulting models with retrieval baselines.
+This repository contains scripts to fine-tune a BGE dense retriever, train a BERT backbone for a ColBERT adaptation experiment, and compare the resulting models with retrieval baselines.
+
+## Published models and research data
+
+The trained retrieval model is available on Hugging Face:
+
+- **Domain-adapted BGE:** [smanousopoulos/archaeo-bge](https://huggingface.co/smanousopoulos/archaeo-bge)
+
+The source code and associated research data, including training pairs,
+evaluation queries, document descriptions, and relevance judgments,
+are archived on [Zenodo](https://doi.org/10.5281/zenodo.23671089).
+
+For details of the training procedures, experimental design, and evaluation results, see the accompanying research paper.
 
 ## 1. Installation
 
