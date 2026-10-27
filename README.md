@@ -14,7 +14,31 @@ are archived on [Zenodo](https://doi.org/10.5281/zenodo.23671089).
 
 For details of the training procedures, experimental design, and evaluation results, see the accompanying research paper.
 
-## 1. Installation
+## Quick Start: Semantic Search
+
+Use the published [domain-adapted BGE model](https://huggingface.co/smanousopoulos/archaeo-bge) to rank archaeological document descriptions against a natural-language query.
+
+No training data or GPU is required.
+
+### Install dependencies
+
+```bash
+pip install sentence-transformers numpy
+```
+
+### Run the example
+
+```bash
+python example-search.py
+```
+
+The script automatically downloads the model from Hugging Face, encodes a sample archaeological query and four document descriptions, and ranks the documents by cosine similarity.
+
+To test your own queries, modify the `query` variable and `documents` list in `example_search.py`.
+
+**Note:** Similarity scores indicate relative semantic similarity, not probabilities of relevance.
+
+## Installation
 
 Use a Python environment with a compatible PyTorch/CUDA installation if you plan to run the scripts on a GPU.
 
@@ -29,7 +53,7 @@ python -m pip install -r requirements.txt
 
 Install a CUDA-compatible PyTorch build for your machine if the default installation is not appropriate. The provided training scripts use `fp16=True`, and model comparison defaults to CUDA.
 
-## 2. Input files
+## Input files
 
 Run all commands from the repository root. The training scripts expect:
 
@@ -41,7 +65,7 @@ data/
 
 Each training CSV must contain `query` and `document` columns. The additional original metadata columns may be retained.
 
-## 3. Train the BGE model
+## Train the BGE model
 
 ```bash
 python supervised-learn-bge-2-stage.py
@@ -58,7 +82,7 @@ The final model is saved to:
 bge_results/bge_large_stage2/
 ```
 
-## 4. Train the backbone for the ColBERT experiment
+## Train the backbone for the ColBERT experiment
 
 ```bash
 python supervised-learn-colbert-transplant-2-stage.py
@@ -79,7 +103,7 @@ colbert_transplant_two_stage_runs/dataset_then_general/stage2/
 
 During comparison, `compare-models.py` loads the pretrained `colbert-ir/colbertv2.0` checkpoint and attempts to load the fine-tuned BERT backbone into it. Check the printed missing/unexpected weight keys when reproducing this adaptation.
 
-## 5. Evaluate the models
+## Evaluate the models
 
 Before evaluating, provide the separately distributed evaluation CSV at:
 
@@ -110,7 +134,7 @@ compare_results/category_summary.csv
 compare_results/query_counts_by_category.csv
 ```
 
-## 6. Reproducibility notes
+## Reproducibility notes
 
 - Training uses `MultipleNegativesRankingLoss` and validation-based checkpoint selection.
 - The scripts currently split train/validation **by row**; documents with multiple query variants may therefore appear in both partitions. Use a document-grouped split for document-disjoint validation.
