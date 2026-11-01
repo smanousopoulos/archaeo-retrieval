@@ -8,7 +8,7 @@ The trained retrieval model is available on Hugging Face:
 
 - **Domain-adapted BGE:** [smanousopoulos/archaeo-bge](https://huggingface.co/smanousopoulos/archaeo-bge)
 
-The source code and associated research data, including training pairs, evaluation queries, document descriptions, and relevance judgments, are archived on [Zenodo](https://doi.org/10.5281/zenodo.23858075).
+The source code and associated research data, including training pairs, evaluation queries, document descriptions, and relevance judgments, are archived on [Zenodo](https://doi.org/10.5281/zenodo.23670935).
 
 For details of the training procedures, experimental design, and interpretation of the results, see the accompanying research paper.
 
