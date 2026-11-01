@@ -31,11 +31,11 @@ Results from the updated evaluation run (mean across 34 queries):
 | Model | P@10 | R@10 | F1@10 | nDCG@10 |
 |---|---:|---:|---:|---:|
 | BM25 | 0.253 | 0.290 | 0.232 | 0.344 |
-| ColBERT pretrained | 0.321 | 0.354 | 0.289 | 0.427 |
-| ColBERT domain-adapted | 0.444 | 0.509 | 0.407 | 0.601 |
-| **Cross-encoder (mxbai-rerank)** | 0.506 | 0.579 | 0.468 | **0.652** |
-| BGE pretrained | 0.400 | 0.448 | 0.363 | 0.520 |
-| BGE domain-adapted | 0.491 | 0.567 | 0.452 | 0.643 |
+| ColBERT | 0.321 | 0.354 | 0.289 | 0.427 |
+| ColBERT-A (domain-adapted) | 0.444 | 0.509 | 0.407 | 0.601 |
+| Cross-encoder (mxbai-rerank) | 0.506 | 0.579 | 0.468 | 0.652 |
+| BGE | 0.400 | 0.448 | 0.363 | 0.520 |
+| BGE-A (domain-adapted) | 0.491 | 0.567 | 0.452 | 0.643 |
 
 The **cross-encoder** has the highest mean nDCG@10 (**0.652**), narrowly ahead of domain-adapted BGE (**0.643**). Domain adaptation improves nDCG@10 for both BGE (0.520 to 0.643, **+0.123**) and ColBERT (0.427 to 0.601, **+0.174**). These are descriptive differences, not statistical-significance findings.
 
