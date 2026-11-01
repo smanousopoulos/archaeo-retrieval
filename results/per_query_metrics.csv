@@ -1,23 +1,23 @@
-query_id,query,category,model,precision_at_10,recall_at_10,f1_at_10,ndcg_at_10
-Q01,Skyphos,One concept,BM25,0.2,0.29,0.24,0.526
+﻿query_id,query,category,model,precision_at_10,recall_at_10,f1_at_10,ndcg_at_10
+Q01,Skyphos,One concept,BM25,0.4,0.57,0.47,0.786
 Q01,Skyphos,One concept,ColBERT,0.4,0.57,0.47,0.844
 Q01,Skyphos,One concept,ColBERT-A,0.4,0.57,0.47,0.806
 Q01,Skyphos,One concept,Cross-encoder,0.4,0.57,0.47,0.738
 Q01,Skyphos,One concept,BGE,0.4,0.57,0.47,0.844
 Q01,Skyphos,One concept,BGE-A,0.4,0.57,0.47,0.806
-Q02,Burial,One concept,BM25,1.0,0.23,0.37,0.79
+Q02,Burial,One concept,BM25,1.0,0.23,0.37,0.851
 Q02,Burial,One concept,ColBERT,1.0,0.23,0.37,1.0
 Q02,Burial,One concept,ColBERT-A,1.0,0.23,0.37,1.0
 Q02,Burial,One concept,Cross-encoder,1.0,0.23,0.37,1.0
 Q02,Burial,One concept,BGE,0.9,0.2,0.33,0.89
 Q02,Burial,One concept,BGE-A,0.9,0.2,0.33,0.922
-Q03,Figurine,One concept,BM25,0.4,0.25,0.31,0.564
+Q03,Figurine,One concept,BM25,0.8,0.5,0.62,0.87
 Q03,Figurine,One concept,ColBERT,1.0,0.62,0.77,1.0
 Q03,Figurine,One concept,ColBERT-A,1.0,0.62,0.77,1.0
 Q03,Figurine,One concept,Cross-encoder,0.8,0.5,0.62,0.841
 Q03,Figurine,One concept,BGE,1.0,0.62,0.77,1.0
 Q03,Figurine,One concept,BGE-A,1.0,0.62,0.77,1.0
-Q04,Statue head,One concept,BM25,0.4,0.57,0.47,0.658
+Q04,Statue head,One concept,BM25,0.6,0.86,0.71,0.882
 Q04,Statue head,One concept,ColBERT,0.5,0.71,0.59,0.763
 Q04,Statue head,One concept,ColBERT-A,0.6,0.86,0.71,0.791
 Q04,Statue head,One concept,Cross-encoder,0.6,0.86,0.71,0.902
@@ -29,115 +29,115 @@ Q05,Metal find,One concept,ColBERT-A,0.7,0.17,0.27,0.71
 Q05,Metal find,One concept,Cross-encoder,0.9,0.21,0.35,0.559
 Q05,Metal find,One concept,BGE,0.9,0.21,0.35,0.768
 Q05,Metal find,One concept,BGE-A,0.9,0.21,0.35,0.927
-Q06,Drinking vessel,One concept,BM25,0.0,0.0,0.0,0.0
-Q06,Drinking vessel,One concept,ColBERT,0.4,0.19,0.26,0.287
-Q06,Drinking vessel,One concept,ColBERT-A,0.9,0.43,0.58,0.832
-Q06,Drinking vessel,One concept,Cross-encoder,0.4,0.19,0.26,0.539
-Q06,Drinking vessel,One concept,BGE,0.4,0.19,0.26,0.325
-Q06,Drinking vessel,One concept,BGE-A,0.8,0.38,0.52,0.771
-Q07,Prehistoric find,One concept,BM25,0.1,0.04,0.05,0.069
+Q06,Container used for drinking,One concept,BM25,0.0,0.0,0.0,0.0
+Q06,Container used for drinking,One concept,ColBERT,0.1,0.05,0.06,0.069
+Q06,Container used for drinking,One concept,ColBERT-A,0.7,0.33,0.45,0.711
+Q06,Container used for drinking,One concept,Cross-encoder,0.7,0.33,0.45,0.668
+Q06,Container used for drinking,One concept,BGE,0.2,0.1,0.13,0.293
+Q06,Container used for drinking,One concept,BGE-A,0.6,0.29,0.39,0.713
+Q07,Prehistoric find,One concept,BM25,0.2,0.07,0.11,0.286
 Q07,Prehistoric find,One concept,ColBERT,0.1,0.04,0.05,0.22
 Q07,Prehistoric find,One concept,ColBERT-A,0.4,0.15,0.22,0.491
-Q07,Prehistoric find,One concept,Cross-encoder,0.6,0.22,0.32,0.362
-Q07,Prehistoric find,One concept,BGE,0.7,0.26,0.38,0.509
+Q07,Prehistoric find,One concept,Cross-encoder,0.6,0.22,0.32,0.359
+Q07,Prehistoric find,One concept,BGE,0.7,0.26,0.38,0.51
 Q07,Prehistoric find,One concept,BGE-A,0.6,0.22,0.32,0.561
-Q08,Transport vessel,One concept,BM25,0.2,0.12,0.15,0.174
-Q08,Transport vessel,One concept,ColBERT,0.5,0.31,0.38,0.381
-Q08,Transport vessel,One concept,ColBERT-A,0.7,0.44,0.54,0.74
-Q08,Transport vessel,One concept,Cross-encoder,0.6,0.38,0.46,0.562
-Q08,Transport vessel,One concept,BGE,0.4,0.25,0.31,0.385
-Q08,Transport vessel,One concept,BGE-A,0.7,0.44,0.54,0.701
-Q09,Ancient toy,One concept,BM25,0.1,0.06,0.07,0.287
-Q09,Ancient toy,One concept,ColBERT,0.4,0.24,0.3,0.396
-Q09,Ancient toy,One concept,ColBERT-A,0.6,0.35,0.44,0.697
-Q09,Ancient toy,One concept,Cross-encoder,0.7,0.41,0.52,0.711
-Q09,Ancient toy,One concept,BGE,0.3,0.18,0.22,0.22
-Q09,Ancient toy,One concept,BGE-A,0.6,0.35,0.44,0.564
-Q10,Feline depictions,One concept,BM25,0.3,0.5,0.37,0.695
-Q10,Feline depictions,One concept,ColBERT,0.4,0.67,0.5,0.798
-Q10,Feline depictions,One concept,ColBERT-A,0.4,0.67,0.5,0.714
-Q10,Feline depictions,One concept,Cross-encoder,0.5,0.83,0.62,0.951
-Q10,Feline depictions,One concept,BGE,0.5,0.83,0.62,0.938
-Q10,Feline depictions,One concept,BGE-A,0.5,0.83,0.62,0.868
-Q11,Animal hunt scenes,One concept with modifiers,BM25,0.1,0.25,0.14,0.13
-Q11,Animal hunt scenes,One concept with modifiers,ColBERT,0.2,0.5,0.29,0.508
+Q08,Container used for shipping goods,One concept,BM25,0.1,0.06,0.07,0.22
+Q08,Container used for shipping goods,One concept,ColBERT,0.3,0.18,0.22,0.278
+Q08,Container used for shipping goods,One concept,ColBERT-A,0.7,0.41,0.52,0.626
+Q08,Container used for shipping goods,One concept,Cross-encoder,0.8,0.47,0.59,0.677
+Q08,Container used for shipping goods,One concept,BGE,0.4,0.24,0.3,0.244
+Q08,Container used for shipping goods,One concept,BGE-A,0.9,0.53,0.67,0.844
+Q09,Ancient toy,One concept,BM25,0.2,0.11,0.14,0.324
+Q09,Ancient toy,One concept,ColBERT,0.4,0.21,0.28,0.389
+Q09,Ancient toy,One concept,ColBERT-A,0.7,0.37,0.48,0.78
+Q09,Ancient toy,One concept,Cross-encoder,0.9,0.47,0.62,0.776
+Q09,Ancient toy,One concept,BGE,0.3,0.16,0.21,0.22
+Q09,Ancient toy,One concept,BGE-A,0.7,0.37,0.48,0.592
+Q10,Feline depictions,One concept,BM25,0.3,0.43,0.35,0.624
+Q10,Feline depictions,One concept,ColBERT,0.5,0.71,0.59,0.838
+Q10,Feline depictions,One concept,ColBERT-A,0.4,0.57,0.47,0.641
+Q10,Feline depictions,One concept,Cross-encoder,0.7,1.0,0.82,0.98
+Q10,Feline depictions,One concept,BGE,0.6,0.86,0.71,0.947
+Q10,Feline depictions,One concept,BGE-A,0.5,0.71,0.59,0.779
+Q11,Animal hunt scenes,One concept with modifiers,BM25,0.1,0.25,0.14,0.139
+Q11,Animal hunt scenes,One concept with modifiers,ColBERT,0.2,0.5,0.29,0.514
 Q11,Animal hunt scenes,One concept with modifiers,ColBERT-A,0.3,0.75,0.43,0.638
-Q11,Animal hunt scenes,One concept with modifiers,Cross-encoder,0.3,0.75,0.43,0.754
-Q11,Animal hunt scenes,One concept with modifiers,BGE,0.4,1.0,0.57,0.911
-Q11,Animal hunt scenes,One concept with modifiers,BGE-A,0.4,1.0,0.57,0.867
-Q12,Storage jar,One concept with modifiers,BM25,0.3,0.15,0.2,0.454
-Q12,Storage jar,One concept with modifiers,ColBERT,0.7,0.35,0.47,0.739
-Q12,Storage jar,One concept with modifiers,ColBERT-A,0.7,0.35,0.47,0.649
-Q12,Storage jar,One concept with modifiers,Cross-encoder,0.7,0.35,0.47,0.6
-Q12,Storage jar,One concept with modifiers,BGE,0.5,0.25,0.33,0.628
-Q12,Storage jar,One concept with modifiers,BGE-A,0.7,0.35,0.47,0.664
+Q11,Animal hunt scenes,One concept with modifiers,Cross-encoder,0.4,1.0,0.57,0.873
+Q11,Animal hunt scenes,One concept with modifiers,BGE,0.4,1.0,0.57,0.918
+Q11,Animal hunt scenes,One concept with modifiers,BGE-A,0.4,1.0,0.57,0.871
+Q12,Storage jar,One concept with modifiers,BM25,0.9,0.41,0.56,0.936
+Q12,Storage jar,One concept with modifiers,ColBERT,1.0,0.45,0.62,1.0
+Q12,Storage jar,One concept with modifiers,ColBERT-A,0.9,0.41,0.56,0.934
+Q12,Storage jar,One concept with modifiers,Cross-encoder,0.8,0.36,0.5,0.801
+Q12,Storage jar,One concept with modifiers,BGE,0.8,0.36,0.5,0.864
+Q12,Storage jar,One concept with modifiers,BGE-A,0.9,0.41,0.56,0.871
 Q13,Prehistoric drinking vessel,One concept with modifiers,BM25,0.0,0.0,0.0,0.0
-Q13,Prehistoric drinking vessel,One concept with modifiers,ColBERT,0.1,0.17,0.12,0.047
-Q13,Prehistoric drinking vessel,One concept with modifiers,ColBERT-A,0.2,0.33,0.25,0.382
-Q13,Prehistoric drinking vessel,One concept with modifiers,Cross-encoder,0.2,0.33,0.25,0.448
-Q13,Prehistoric drinking vessel,One concept with modifiers,BGE,0.1,0.17,0.12,0.083
-Q13,Prehistoric drinking vessel,One concept with modifiers,BGE-A,0.2,0.33,0.25,0.216
-Q14,5th century BC vessel,One concept with modifiers,BM25,0.3,0.38,0.33,0.243
-Q14,5th century BC vessel,One concept with modifiers,ColBERT,0.2,0.25,0.22,0.245
-Q14,5th century BC vessel,One concept with modifiers,ColBERT-A,0.3,0.38,0.33,0.347
-Q14,5th century BC vessel,One concept with modifiers,Cross-encoder,0.4,0.5,0.44,0.741
-Q14,5th century BC vessel,One concept with modifiers,BGE,0.2,0.25,0.22,0.136
-Q14,5th century BC vessel,One concept with modifiers,BGE-A,0.2,0.25,0.22,0.373
-Q15,Transport vessel from 5th century BC,One concept with modifiers,BM25,0.2,0.33,0.25,0.179
-Q15,Transport vessel from 5th century BC,One concept with modifiers,ColBERT,0.2,0.33,0.25,0.212
-Q15,Transport vessel from 5th century BC,One concept with modifiers,ColBERT-A,0.4,0.67,0.5,0.438
-Q15,Transport vessel from 5th century BC,One concept with modifiers,Cross-encoder,0.4,0.67,0.5,0.515
-Q15,Transport vessel from 5th century BC,One concept with modifiers,BGE,0.1,0.17,0.12,0.042
-Q15,Transport vessel from 5th century BC,One concept with modifiers,BGE-A,0.4,0.67,0.5,0.455
-Q16,One-handle skyphos,One concept with modifiers,BM25,0.1,0.33,0.15,0.556
+Q13,Prehistoric drinking vessel,One concept with modifiers,ColBERT,0.1,0.12,0.11,0.118
+Q13,Prehistoric drinking vessel,One concept with modifiers,ColBERT-A,0.2,0.25,0.22,0.539
+Q13,Prehistoric drinking vessel,One concept with modifiers,Cross-encoder,0.3,0.38,0.33,0.528
+Q13,Prehistoric drinking vessel,One concept with modifiers,BGE,0.2,0.25,0.22,0.251
+Q13,Prehistoric drinking vessel,One concept with modifiers,BGE-A,0.2,0.25,0.22,0.386
+Q14,Vessel dated to fifth century BCE,One concept with modifiers,BM25,0.2,0.22,0.21,0.216
+Q14,Vessel dated to fifth century BCE,One concept with modifiers,ColBERT,0.2,0.22,0.21,0.338
+Q14,Vessel dated to fifth century BCE,One concept with modifiers,ColBERT-A,0.4,0.44,0.42,0.411
+Q14,Vessel dated to fifth century BCE,One concept with modifiers,Cross-encoder,0.5,0.56,0.53,0.705
+Q14,Vessel dated to fifth century BCE,One concept with modifiers,BGE,0.3,0.33,0.32,0.232
+Q14,Vessel dated to fifth century BCE,One concept with modifiers,BGE-A,0.3,0.33,0.32,0.411
+Q15,Transport container dating to the fifth century BC,One concept with modifiers,BM25,0.2,0.33,0.25,0.165
+Q15,Transport container dating to the fifth century BC,One concept with modifiers,ColBERT,0.2,0.33,0.25,0.242
+Q15,Transport container dating to the fifth century BC,One concept with modifiers,ColBERT-A,0.4,0.67,0.5,0.44
+Q15,Transport container dating to the fifth century BC,One concept with modifiers,Cross-encoder,0.5,0.83,0.62,0.579
+Q15,Transport container dating to the fifth century BC,One concept with modifiers,BGE,0.1,0.17,0.12,0.141
+Q15,Transport container dating to the fifth century BC,One concept with modifiers,BGE-A,0.5,0.83,0.62,0.517
+Q16,One-handle skyphos,One concept with modifiers,BM25,0.3,1.0,0.46,0.825
 Q16,One-handle skyphos,One concept with modifiers,ColBERT,0.3,1.0,0.46,0.834
 Q16,One-handle skyphos,One concept with modifiers,ColBERT-A,0.3,1.0,0.46,0.825
 Q16,One-handle skyphos,One concept with modifiers,Cross-encoder,0.2,0.67,0.31,0.673
 Q16,One-handle skyphos,One concept with modifiers,BGE,0.3,1.0,0.46,0.826
-Q16,One-handle skyphos,One concept with modifiers,BGE-A,0.3,1.0,0.46,0.834
-Q17,Prehistoric metal find,One concept with modifiers,BM25,0.1,0.09,0.1,0.073
+Q16,One-handle skyphos,One concept with modifiers,BGE-A,0.3,1.0,0.46,0.851
+Q17,Prehistoric metal find,One concept with modifiers,BM25,0.1,0.09,0.1,0.07
 Q17,Prehistoric metal find,One concept with modifiers,ColBERT,0.2,0.18,0.19,0.171
 Q17,Prehistoric metal find,One concept with modifiers,ColBERT-A,0.5,0.45,0.48,0.406
 Q17,Prehistoric metal find,One concept with modifiers,Cross-encoder,0.5,0.45,0.48,0.341
 Q17,Prehistoric metal find,One concept with modifiers,BGE,0.4,0.36,0.38,0.301
-Q17,Prehistoric metal find,One concept with modifiers,BGE-A,0.6,0.55,0.57,0.447
-Q18,Animal figurine,One concept with modifiers,BM25,0.5,0.62,0.56,0.662
+Q17,Prehistoric metal find,One concept with modifiers,BGE-A,0.5,0.45,0.48,0.423
+Q18,Animal figurine,One concept with modifiers,BM25,0.5,0.62,0.56,0.746
 Q18,Animal figurine,One concept with modifiers,ColBERT,0.4,0.5,0.44,0.648
-Q18,Animal figurine,One concept with modifiers,ColBERT-A,0.5,0.62,0.56,0.721
+Q18,Animal figurine,One concept with modifiers,ColBERT-A,0.6,0.75,0.67,0.797
 Q18,Animal figurine,One concept with modifiers,Cross-encoder,0.6,0.75,0.67,0.819
-Q18,Animal figurine,One concept with modifiers,BGE,0.5,0.62,0.56,0.699
+Q18,Animal figurine,One concept with modifiers,BGE,0.5,0.62,0.56,0.732
 Q18,Animal figurine,One concept with modifiers,BGE-A,0.4,0.5,0.44,0.648
-Q19,Child burial,One concept with modifiers,BM25,0.6,0.22,0.32,0.547
-Q19,Child burial,One concept with modifiers,ColBERT,1.0,0.37,0.54,0.958
-Q19,Child burial,One concept with modifiers,ColBERT-A,0.7,0.26,0.38,0.695
-Q19,Child burial,One concept with modifiers,Cross-encoder,0.9,0.33,0.49,0.87
-Q19,Child burial,One concept with modifiers,BGE,0.9,0.33,0.49,0.867
-Q19,Child burial,One concept with modifiers,BGE-A,1.0,0.37,0.54,0.927
-Q20,Medieval child burial,One concept with modifiers,BM25,0.2,0.2,0.2,0.192
-Q20,Medieval child burial,One concept with modifiers,ColBERT,0.2,0.2,0.2,0.204
-Q20,Medieval child burial,One concept with modifiers,ColBERT-A,0.4,0.4,0.4,0.333
-Q20,Medieval child burial,One concept with modifiers,Cross-encoder,0.7,0.7,0.7,0.802
-Q20,Medieval child burial,One concept with modifiers,BGE,0.6,0.6,0.6,0.674
-Q20,Medieval child burial,One concept with modifiers,BGE-A,0.8,0.8,0.8,0.798
-Q21,Statue head of goddess,One concept with modifiers,BM25,0.1,0.5,0.17,0.177
+Q19,Burials of children,One concept with modifiers,BM25,0.4,0.15,0.22,0.31
+Q19,Burials of children,One concept with modifiers,ColBERT,1.0,0.37,0.54,0.943
+Q19,Burials of children,One concept with modifiers,ColBERT-A,0.8,0.3,0.43,0.774
+Q19,Burials of children,One concept with modifiers,Cross-encoder,1.0,0.37,0.54,0.927
+Q19,Burials of children,One concept with modifiers,BGE,1.0,0.37,0.54,0.927
+Q19,Burials of children,One concept with modifiers,BGE-A,1.0,0.37,0.54,0.927
+Q20,Medieval child burial,One concept with modifiers,BM25,0.4,0.33,0.36,0.253
+Q20,Medieval child burial,One concept with modifiers,ColBERT,0.3,0.25,0.27,0.269
+Q20,Medieval child burial,One concept with modifiers,ColBERT-A,0.5,0.42,0.45,0.429
+Q20,Medieval child burial,One concept with modifiers,Cross-encoder,0.8,0.67,0.73,0.842
+Q20,Medieval child burial,One concept with modifiers,BGE,0.7,0.58,0.64,0.667
+Q20,Medieval child burial,One concept with modifiers,BGE-A,0.9,0.75,0.82,0.874
+Q21,Statue head of goddess,One concept with modifiers,BM25,0.1,0.5,0.17,0.193
 Q21,Statue head of goddess,One concept with modifiers,ColBERT,0.1,0.5,0.17,0.218
 Q21,Statue head of goddess,One concept with modifiers,ColBERT-A,0.2,1.0,0.33,0.491
 Q21,Statue head of goddess,One concept with modifiers,Cross-encoder,0.2,1.0,0.33,0.92
 Q21,Statue head of goddess,One concept with modifiers,BGE,0.0,0.0,0.0,0.0
 Q21,Statue head of goddess,One concept with modifiers,BGE-A,0.2,1.0,0.33,0.482
-Q22,Feline depictions on pottery,Two concepts,BM25,0.1,0.2,0.13,0.186
-Q22,Feline depictions on pottery,Two concepts,ColBERT,0.3,0.6,0.4,0.603
+Q22,Feline depictions on pottery,Two concepts,BM25,0.1,0.2,0.13,0.372
+Q22,Feline depictions on pottery,Two concepts,ColBERT,0.3,0.6,0.4,0.616
 Q22,Feline depictions on pottery,Two concepts,ColBERT-A,0.1,0.2,0.13,0.372
-Q22,Feline depictions on pottery,Two concepts,Cross-encoder,0.5,1.0,0.67,0.921
+Q22,Feline depictions on pottery,Two concepts,Cross-encoder,0.5,1.0,0.67,0.927
 Q22,Feline depictions on pottery,Two concepts,BGE,0.3,0.6,0.4,0.368
 Q22,Feline depictions on pottery,Two concepts,BGE-A,0.3,0.6,0.4,0.44
-Q23,Pottery from domestic contexts,Two concepts,BM25,0.3,0.38,0.33,0.41
-Q23,Pottery from domestic contexts,Two concepts,ColBERT,0.3,0.38,0.33,0.441
-Q23,Pottery from domestic contexts,Two concepts,ColBERT-A,0.4,0.5,0.44,0.525
-Q23,Pottery from domestic contexts,Two concepts,Cross-encoder,0.3,0.38,0.33,0.413
-Q23,Pottery from domestic contexts,Two concepts,BGE,0.4,0.5,0.44,0.595
-Q23,Pottery from domestic contexts,Two concepts,BGE-A,0.5,0.62,0.56,0.705
-Q24,Weapon from grave context,Two concepts,BM25,0.1,0.2,0.13,0.069
+Q23,Pottery from domestic contexts,Two concepts,BM25,0.3,0.33,0.32,0.422
+Q23,Pottery from domestic contexts,Two concepts,ColBERT,0.5,0.56,0.53,0.516
+Q23,Pottery from domestic contexts,Two concepts,ColBERT-A,0.5,0.56,0.53,0.509
+Q23,Pottery from domestic contexts,Two concepts,Cross-encoder,0.4,0.44,0.42,0.469
+Q23,Pottery from domestic contexts,Two concepts,BGE,0.4,0.44,0.42,0.502
+Q23,Pottery from domestic contexts,Two concepts,BGE-A,0.5,0.56,0.53,0.616
+Q24,Weapon from grave context,Two concepts,BM25,0.1,0.2,0.13,0.305
 Q24,Weapon from grave context,Two concepts,ColBERT,0.2,0.4,0.27,0.27
 Q24,Weapon from grave context,Two concepts,ColBERT-A,0.2,0.4,0.27,0.466
 Q24,Weapon from grave context,Two concepts,Cross-encoder,0.5,1.0,0.67,0.695
@@ -150,56 +150,56 @@ Q25,Metal offering found in sanctuary,Two concepts,Cross-encoder,0.1,0.25,0.14,0
 Q25,Metal offering found in sanctuary,Two concepts,BGE,0.3,0.75,0.43,0.832
 Q25,Metal offering found in sanctuary,Two concepts,BGE-A,0.3,0.75,0.43,0.832
 Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,BM25,0.0,0.0,0.0,0.0
-Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,ColBERT,0.2,0.67,0.31,0.251
-Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,ColBERT-A,0.3,1.0,0.46,0.576
-Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,Cross-encoder,0.2,0.67,0.31,0.425
-Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,BGE,0.2,0.67,0.31,0.308
-Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,BGE-A,0.2,0.67,0.31,0.302
-Q27,Prehistoric metal find from grave context,Two concepts with modifiers,BM25,0.0,0.0,0.0,0.0
+Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,ColBERT,0.1,0.33,0.15,0.167
+Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,ColBERT-A,0.3,1.0,0.46,0.507
+Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,Cross-encoder,0.2,0.67,0.31,0.437
+Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,BGE,0.2,0.67,0.31,0.338
+Q26,Storage jar from early iron age with animal scene,Two concepts with modifiers,BGE-A,0.2,0.67,0.31,0.308
+Q27,Prehistoric metal find from grave context,Two concepts with modifiers,BM25,0.2,0.25,0.22,0.197
 Q27,Prehistoric metal find from grave context,Two concepts with modifiers,ColBERT,0.1,0.12,0.11,0.11
 Q27,Prehistoric metal find from grave context,Two concepts with modifiers,ColBERT-A,0.4,0.5,0.44,0.431
-Q27,Prehistoric metal find from grave context,Two concepts with modifiers,Cross-encoder,0.7,0.88,0.78,0.69
+Q27,Prehistoric metal find from grave context,Two concepts with modifiers,Cross-encoder,0.7,0.88,0.78,0.687
 Q27,Prehistoric metal find from grave context,Two concepts with modifiers,BGE,0.2,0.25,0.22,0.319
-Q27,Prehistoric metal find from grave context,Two concepts with modifiers,BGE-A,0.2,0.25,0.22,0.319
-Q28,Prehistoric weapon from grave context,Two concepts with modifiers,BM25,0.0,0.0,0.0,0.0
-Q28,Prehistoric weapon from grave context,Two concepts with modifiers,ColBERT,0.1,0.25,0.14,0.222
-Q28,Prehistoric weapon from grave context,Two concepts with modifiers,ColBERT-A,0.2,0.5,0.29,0.714
-Q28,Prehistoric weapon from grave context,Two concepts with modifiers,Cross-encoder,0.4,1.0,0.57,0.654
-Q28,Prehistoric weapon from grave context,Two concepts with modifiers,BGE,0.2,0.5,0.29,0.276
-Q28,Prehistoric weapon from grave context,Two concepts with modifiers,BGE-A,0.3,0.75,0.43,0.455
-Q29,Medieval child burial with offerings,Two concepts with modifiers,BM25,0.3,0.6,0.4,0.417
+Q27,Prehistoric metal find from grave context,Two concepts with modifiers,BGE-A,0.3,0.38,0.33,0.351
+Q28,Prehistoric weapon from grave context,Two concepts with modifiers,BM25,0.1,0.33,0.15,0.278
+Q28,Prehistoric weapon from grave context,Two concepts with modifiers,ColBERT,0.1,0.33,0.15,0.24
+Q28,Prehistoric weapon from grave context,Two concepts with modifiers,ColBERT-A,0.2,0.67,0.31,0.772
+Q28,Prehistoric weapon from grave context,Two concepts with modifiers,Cross-encoder,0.3,1.0,0.46,0.644
+Q28,Prehistoric weapon from grave context,Two concepts with modifiers,BGE,0.2,0.67,0.31,0.301
+Q28,Prehistoric weapon from grave context,Two concepts with modifiers,BGE-A,0.3,1.0,0.46,0.491
+Q29,Medieval child burial with offerings,Two concepts with modifiers,BM25,0.2,0.4,0.27,0.231
 Q29,Medieval child burial with offerings,Two concepts with modifiers,ColBERT,0.1,0.2,0.13,0.124
 Q29,Medieval child burial with offerings,Two concepts with modifiers,ColBERT-A,0.3,0.6,0.4,0.512
 Q29,Medieval child burial with offerings,Two concepts with modifiers,Cross-encoder,0.3,0.6,0.4,0.607
 Q29,Medieval child burial with offerings,Two concepts with modifiers,BGE,0.3,0.6,0.4,0.33
 Q29,Medieval child burial with offerings,Two concepts with modifiers,BGE-A,0.3,0.6,0.4,0.394
-Q30,Medieval child burial in multiple burial,Two concepts with modifiers,BM25,0.1,0.25,0.14,0.118
+Q30,Medieval child burial in multiple burial,Two concepts with modifiers,BM25,0.1,0.25,0.14,0.168
 Q30,Medieval child burial in multiple burial,Two concepts with modifiers,ColBERT,0.0,0.0,0.0,0.0
 Q30,Medieval child burial in multiple burial,Two concepts with modifiers,ColBERT-A,0.1,0.25,0.14,0.39
 Q30,Medieval child burial in multiple burial,Two concepts with modifiers,Cross-encoder,0.0,0.0,0.0,0.0
 Q30,Medieval child burial in multiple burial,Two concepts with modifiers,BGE,0.2,0.5,0.29,0.503
 Q30,Medieval child burial in multiple burial,Two concepts with modifiers,BGE-A,0.2,0.5,0.29,0.281
-Q31,Medieval child burial with numismatic offerings,Two concepts with modifiers,BM25,0.1,0.5,0.17,0.387
+Q31,Medieval child burial with numismatic offerings,Two concepts with modifiers,BM25,0.1,0.5,0.17,0.204
 Q31,Medieval child burial with numismatic offerings,Two concepts with modifiers,ColBERT,0.1,0.5,0.17,0.218
 Q31,Medieval child burial with numismatic offerings,Two concepts with modifiers,ColBERT-A,0.2,1.0,0.33,0.58
 Q31,Medieval child burial with numismatic offerings,Two concepts with modifiers,Cross-encoder,0.2,1.0,0.33,1.0
 Q31,Medieval child burial with numismatic offerings,Two concepts with modifiers,BGE,0.2,1.0,0.33,0.807
 Q31,Medieval child burial with numismatic offerings,Two concepts with modifiers,BGE-A,0.2,1.0,0.33,1.0
-Q32,Drinking vessel without horizontal handles,Negation,BM25,0.0,0.0,0.0,0.0
-Q32,Drinking vessel without horizontal handles,Negation,ColBERT,0.3,0.3,0.3,0.266
-Q32,Drinking vessel without horizontal handles,Negation,ColBERT-A,0.4,0.4,0.4,0.526
-Q32,Drinking vessel without horizontal handles,Negation,Cross-encoder,0.4,0.4,0.4,0.526
-Q32,Drinking vessel without horizontal handles,Negation,BGE,0.2,0.2,0.2,0.306
-Q32,Drinking vessel without horizontal handles,Negation,BGE-A,0.3,0.3,0.3,0.49
-Q33,Prehistoric metal find from non-grave context,Negation,BM25,0.1,0.33,0.15,0.156
+Q32,Drinking vessel lacking horizontal handles,Negation,BM25,0.1,0.1,0.1,0.082
+Q32,Drinking vessel lacking horizontal handles,Negation,ColBERT,0.3,0.3,0.3,0.269
+Q32,Drinking vessel lacking horizontal handles,Negation,ColBERT-A,0.3,0.3,0.3,0.444
+Q32,Drinking vessel lacking horizontal handles,Negation,Cross-encoder,0.4,0.4,0.4,0.493
+Q32,Drinking vessel lacking horizontal handles,Negation,BGE,0.3,0.3,0.3,0.391
+Q32,Drinking vessel lacking horizontal handles,Negation,BGE-A,0.3,0.3,0.3,0.474
+Q33,Prehistoric metal find from non-grave context,Negation,BM25,0.0,0.0,0.0,0.0
 Q33,Prehistoric metal find from non-grave context,Negation,ColBERT,0.0,0.0,0.0,0.0
 Q33,Prehistoric metal find from non-grave context,Negation,ColBERT-A,0.0,0.0,0.0,0.0
 Q33,Prehistoric metal find from non-grave context,Negation,Cross-encoder,0.1,0.33,0.15,0.148
 Q33,Prehistoric metal find from non-grave context,Negation,BGE,0.0,0.0,0.0,0.0
 Q33,Prehistoric metal find from non-grave context,Negation,BGE-A,0.1,0.33,0.15,0.182
 Q34,Drinking vessel other than prehistoric,Negation,BM25,0.0,0.0,0.0,0.0
-Q34,Drinking vessel other than prehistoric,Negation,ColBERT,0.1,0.09,0.1,0.073
-Q34,Drinking vessel other than prehistoric,Negation,ColBERT-A,0.5,0.45,0.48,0.4
-Q34,Drinking vessel other than prehistoric,Negation,Cross-encoder,0.1,0.09,0.1,0.073
-Q34,Drinking vessel other than prehistoric,Negation,BGE,0.3,0.27,0.29,0.417
-Q34,Drinking vessel other than prehistoric,Negation,BGE-A,0.6,0.55,0.57,0.743
+Q34,Drinking vessel other than prehistoric,Negation,ColBERT,0.1,0.07,0.08,0.069
+Q34,Drinking vessel other than prehistoric,Negation,ColBERT-A,0.5,0.36,0.42,0.394
+Q34,Drinking vessel other than prehistoric,Negation,Cross-encoder,0.3,0.21,0.25,0.174
+Q34,Drinking vessel other than prehistoric,Negation,BGE,0.3,0.21,0.25,0.4
+Q34,Drinking vessel other than prehistoric,Negation,BGE-A,0.7,0.5,0.58,0.761
