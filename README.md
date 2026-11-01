@@ -20,11 +20,9 @@ The configurations comprise BM25, pretrained and domain-adapted ColBERT, pretrai
 
 ### Interactive top-10 ranking explorer
 
-**[Explore the top-10 rankings](docs/index.html)** (open the HTML file locally, or publish `docs/` using GitHub Pages).
+**[Explore the top-10 rankings](https://smanousopoulos.github.io/archaeo-retrieval/)**
 
 The explorer allows readers to select an evaluation query, compare the six models' top-10 rankings, inspect relevance grades and abbreviated document descriptions, and examine per-query performance. It is a static HTML page and does not require a Python server.
-
-> After enabling GitHub Pages under **Settings → Pages**, replace this relative link with the live Pages URL. Links to `docs/index.html` on GitHub show the source rather than running the interactive page.
 
 ### Overall retrieval effectiveness
 
