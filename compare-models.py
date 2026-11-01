@@ -1,4 +1,5 @@
 import os
+import re
 import torch
 import json
 import numpy as np
@@ -238,7 +239,7 @@ class CrossEncoderScorer:
         del self.model
 
 def simple_tokenize(text):
-    return str(text).lower().split()
+    return re.findall(r"\b\w+\b", str(text).lower())
 
 
 class BM25Scorer:
