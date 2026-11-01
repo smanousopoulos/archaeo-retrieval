@@ -339,8 +339,8 @@ def main():
                     for i, doc in enumerate(ranked_list[:k]):
                         g_score = gold.get(doc, 0)
                         m_score = scores_dict[doc]
-                        display_doc = (doc[:60] + "..") if len(doc) > 60 else doc
-                        print(f"{i+1:<5} | {m_score:>6.2f} | {g_score:^4} | {display_doc}")
+                        display_doc = str(doc).replace("\r", "\\r").replace("\n", "\\n")
+                        print(f"{i+1:<5} | {m_score:>8.4f} | {g_score:^4} | {display_doc}")
 
                     print(
                         f"Metrics @{k}: "
